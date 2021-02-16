@@ -23,6 +23,12 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# TR // MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_EXCLUDES_PREBUILT_ETAR_CALENDAR := true
+TARGET_EXCLUDES_PREBUILT_SIMPLE_KEYBOARD := true
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
 
