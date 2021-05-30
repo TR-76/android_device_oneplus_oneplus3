@@ -23,6 +23,11 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+TARGET_EXCLUDES_PREBUILT_PRIVACY_BROWSER := true
+TARGET_EXCLUDES_PREBUILT_SIMPLE_KEYBOARD := true
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
 
