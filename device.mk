@@ -556,6 +556,10 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
