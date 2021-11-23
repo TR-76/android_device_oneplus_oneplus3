@@ -22,6 +22,7 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_EXCLUDES_AUDIOFX := true
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
