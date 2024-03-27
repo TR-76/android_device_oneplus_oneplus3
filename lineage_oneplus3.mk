@@ -29,6 +29,9 @@ $(call inherit-product-if-exists, vendor/mulch/mulch.mk)
 # BCR
 $(call inherit-product-if-exists, vendor/bcr/config.mk)
 
+# microG
+$(call inherit-product-if-exists, vendor/microg/config.mk)
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
 
